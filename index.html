@@ -1,3 +1,47 @@
-Hello World
-This is my first website
-Jun is so cool
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elliot's Tic Tac Toe Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Tic-Tac-Toe Game</h1>
+  <h2>Score:</h2>
+  
+  <div id="scoreboard">
+    <div>
+      <span>Player X:</span>
+      <span id="playerXScore">0</span>
+    </div>
+    <div>
+      <span>Player O:</span>
+      <span id="playerOScore">0</span>
+    </div>
+  </div>
+
+  <div id="result-message"></div>
+  <table>
+    <tr>
+      <td id="cell1" onclick="playMove(1)"></td>
+      <td id="cell2" onclick="playMove(2)"></td>
+      <td id="cell3" onclick="playMove(3)"></td>
+    </tr>
+    <tr>
+      <td id="cell4" onclick="playMove(4)"></td>
+      <td id="cell5" onclick="playMove(5)"></td>
+      <td id="cell6" onclick="playMove(6)"></td>
+    </tr>
+    <tr>
+      <td id="cell7" onclick="playMove(7)"></td>
+      <td id="cell8" onclick="playMove(8)"></td>
+      <td id="cell9" onclick="playMove(9)"></td>
+    </tr>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
